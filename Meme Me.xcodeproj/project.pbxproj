@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8300A462607B0BE00ECB70B /* MemeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */; };
 		B8CD3011260663BB001CC975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3010260663BB001CC975 /* AppDelegate.swift */; };
 		B8CD3013260663BB001CC975 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3012260663BB001CC975 /* SceneDelegate.swift */; };
 		B8CD3015260663BB001CC975 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3014260663BB001CC975 /* ViewController.swift */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B8CD300D260663BB001CC975 /* Image Picker Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Picker Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		B8CD300D260663BB001CC975 /* Meme Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CD3010260663BB001CC975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CD3012260663BB001CC975 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B8CD3014260663BB001CC975 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8300A402607B03A00ECB70B /* TextFieldDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */,
+			);
+			path = TextFieldDelegates;
+			sourceTree = "<group>";
+		};
 		B8CD3004260663BB001CC975 = {
 			isa = PBXGroup;
 			children = (
-				B8CD300F260663BB001CC975 /* Image Picker Practice */,
+				B8CD300F260663BB001CC975 /* Meme Me */,
 				B8CD300E260663BB001CC975 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,14 +58,15 @@
 		B8CD300E260663BB001CC975 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8CD300D260663BB001CC975 /* Image Picker Practice.app */,
+				B8CD300D260663BB001CC975 /* Meme Me.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8CD300F260663BB001CC975 /* Image Picker Practice */ = {
+		B8CD300F260663BB001CC975 /* Meme Me */ = {
 			isa = PBXGroup;
 			children = (
+				B8300A402607B03A00ECB70B /* TextFieldDelegates */,
 				B8CD3010260663BB001CC975 /* AppDelegate.swift */,
 				B8CD3012260663BB001CC975 /* SceneDelegate.swift */,
 				B8CD3014260663BB001CC975 /* ViewController.swift */,
@@ -64,15 +75,15 @@
 				B8CD301B260663BE001CC975 /* LaunchScreen.storyboard */,
 				B8CD301E260663BE001CC975 /* Info.plist */,
 			);
-			path = "Image Picker Practice";
+			path = "Meme Me";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8CD300C260663BB001CC975 /* Image Picker Practice */ = {
+		B8CD300C260663BB001CC975 /* Meme Me */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8CD3021260663BE001CC975 /* Build configuration list for PBXNativeTarget "Image Picker Practice" */;
+			buildConfigurationList = B8CD3021260663BE001CC975 /* Build configuration list for PBXNativeTarget "Meme Me" */;
 			buildPhases = (
 				B8CD3009260663BB001CC975 /* Sources */,
 				B8CD300A260663BB001CC975 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Image Picker Practice";
+			name = "Meme Me";
 			productName = "Image Picker Practice";
-			productReference = B8CD300D260663BB001CC975 /* Image Picker Practice.app */;
+			productReference = B8CD300D260663BB001CC975 /* Meme Me.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B8CD3008260663BB001CC975 /* Build configuration list for PBXProject "Image Picker Practice" */;
+			buildConfigurationList = B8CD3008260663BB001CC975 /* Build configuration list for PBXProject "Meme Me" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8CD300C260663BB001CC975 /* Image Picker Practice */,
+				B8CD300C260663BB001CC975 /* Meme Me */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +150,7 @@
 			files = (
 				B8CD3015260663BB001CC975 /* ViewController.swift in Sources */,
 				B8CD3011260663BB001CC975 /* AppDelegate.swift in Sources */,
+				B8300A462607B0BE00ECB70B /* MemeTextFieldDelegate.swift in Sources */,
 				B8CD3013260663BB001CC975 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,12 +300,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CC7J63JRC;
-				INFOPLIST_FILE = "Image Picker Practice/Info.plist";
+				INFOPLIST_FILE = "Meme Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maleina.Image-Picker-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maleina.Meme-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +319,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2CC7J63JRC;
-				INFOPLIST_FILE = "Image Picker Practice/Info.plist";
+				INFOPLIST_FILE = "Meme Me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.maleina.Image-Picker-Practice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.maleina.Meme-Me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8CD3008260663BB001CC975 /* Build configuration list for PBXProject "Image Picker Practice" */ = {
+		B8CD3008260663BB001CC975 /* Build configuration list for PBXProject "Meme Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8CD301F260663BE001CC975 /* Debug */,
@@ -331,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8CD3021260663BE001CC975 /* Build configuration list for PBXNativeTarget "Image Picker Practice" */ = {
+		B8CD3021260663BE001CC975 /* Build configuration list for PBXNativeTarget "Meme Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8CD3022260663BE001CC975 /* Debug */,
