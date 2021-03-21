@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Tz-3I-Dw0">
-                                <rect key="frame" x="0.0" y="44" width="390" height="721"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="716"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vU5-5C-koe">
-                                <rect key="frame" x="0.0" y="766" width="390" height="44"/>
+                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
                                 <items>
                                     <barButtonItem title="Pick Photo" id="azb-Ws-7kF">
                                         <connections>
@@ -40,13 +39,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4og-AE-gdg">
-                                <rect key="frame" x="193" y="746.66666666666663" width="4" height="18.333333333333371"/>
+                                <rect key="frame" x="193" y="725.66666666666663" width="4" height="18.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0Re-IM-BuT"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Qs-Nk-PuS"/>
@@ -56,7 +55,7 @@
                             <constraint firstItem="q1n-sK-Mag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAS-np-3Bh"/>
                             <constraint firstItem="4og-AE-gdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbW-qw-CBc"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mLV-iE-Imr"/>
-                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" id="moY-G3-gX7"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" constant="16" id="moY-G3-gX7"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n6I-sV-Hkr"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAP-i0-8MU"/>
                         </constraints>
@@ -70,12 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-617" y="-569"/>
+            <point key="canvasLocation" x="-1211" y="-562"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
