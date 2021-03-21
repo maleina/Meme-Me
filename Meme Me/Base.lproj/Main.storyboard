@@ -17,14 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Tz-3I-Dw0">
-                                <rect key="frame" x="45" y="302" width="300" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="n5a-wm-1yP"/>
-                                    <constraint firstAttribute="height" constant="250" id="rmy-gM-jCd"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="44" width="390" height="721"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vU5-5C-koe">
-                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
+                                <rect key="frame" x="0.0" y="766" width="390" height="44"/>
                                 <items>
                                     <barButtonItem title="Pick Photo" id="azb-Ws-7kF">
                                         <connections>
@@ -39,12 +35,12 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-sK-Mag">
-                                <rect key="frame" x="193" y="52" width="4" height="18.666666666666671"/>
+                                <rect key="frame" x="193" y="59.999999999999993" width="4" height="18.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4og-AE-gdg">
-                                <rect key="frame" x="193" y="734.33333333333337" width="4" height="18.666666666666629"/>
+                                <rect key="frame" x="193" y="746.66666666666663" width="4" height="18.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -52,13 +48,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="0Re-IM-BuT"/>
+                            <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="0Re-IM-BuT"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Qs-Nk-PuS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="bottom" id="CPa-v7-a1l"/>
-                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JKK-1s-HOy"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="top" constant="-1" id="UKN-Bx-Oet"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Tz-3I-Dw0" secondAttribute="trailing" id="X6F-q5-WhJ"/>
                             <constraint firstItem="q1n-sK-Mag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAS-np-3Bh"/>
                             <constraint firstItem="4og-AE-gdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbW-qw-CBc"/>
-                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mdM-uY-ePO"/>
-                            <constraint firstItem="vU5-5C-koe" firstAttribute="top" secondItem="4og-AE-gdg" secondAttribute="bottom" constant="8" id="moY-G3-gX7"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mLV-iE-Imr"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" id="moY-G3-gX7"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n6I-sV-Hkr"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAP-i0-8MU"/>
                         </constraints>
@@ -72,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-457" y="-102"/>
+            <point key="canvasLocation" x="-617" y="-569"/>
         </scene>
     </scenes>
     <resources>
