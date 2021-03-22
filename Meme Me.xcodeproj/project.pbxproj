@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B8300A462607B0BE00ECB70B /* MemeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */; };
+		B84EFAB22609046A000A5A95 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84EFAB12609046A000A5A95 /* Meme.swift */; };
 		B8CD3011260663BB001CC975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3010260663BB001CC975 /* AppDelegate.swift */; };
 		B8CD3013260663BB001CC975 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3012260663BB001CC975 /* SceneDelegate.swift */; };
 		B8CD3015260663BB001CC975 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CD3014260663BB001CC975 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		B84EFAB12609046A000A5A95 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		B8CD300D260663BB001CC975 /* Meme Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CD3010260663BB001CC975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8CD3012260663BB001CC975 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				B8CD3019260663BE001CC975 /* Assets.xcassets */,
 				B8CD301B260663BE001CC975 /* LaunchScreen.storyboard */,
 				B8CD301E260663BE001CC975 /* Info.plist */,
+				B84EFAB12609046A000A5A95 /* Meme.swift */,
 			);
 			path = "Meme Me";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				B8CD3011260663BB001CC975 /* AppDelegate.swift in Sources */,
 				B8300A462607B0BE00ECB70B /* MemeTextFieldDelegate.swift in Sources */,
 				B8CD3013260663BB001CC975 /* SceneDelegate.swift in Sources */,
+				B84EFAB22609046A000A5A95 /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
