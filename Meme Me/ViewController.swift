@@ -29,6 +29,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         shareButton.isEnabled = false
+        
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
     }
@@ -66,10 +67,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
                     imageView.image = image
                 }
+        shareButton.isEnabled = true
         dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        shareButton.isEnabled = false
         dismiss(animated: true, completion: nil)
     }
     
@@ -131,12 +134,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func shareMeme(_ sender: Any) {
+        let memedImage = generateMemedImage()
+        let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        activityViewController.completionWithItemsHandler = {
+            activity, success, items, error in
+                        self.save()
+                        self.dismiss(animated: true, completion: nil)
+        }
+        present(activityViewController, animated: true, completion: nil)
     }
     
     @IBAction func cancelMeme(_ sender: Any) {
         topTextField.text = "TOP"
         bottomTextField.text = "BOTTOM"
         imageView.image = nil
+        shareButton.isEnabled = false
     }
     
     
