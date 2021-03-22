@@ -57,6 +57,9 @@
                                                 <rect key="frame" x="16" y="10.666666666666664" width="19" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                                <connections>
+                                                    <action selector="shareMeme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coM-2j-gwg"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Cancel" style="plain" id="6ww-zA-Nxm">
@@ -64,6 +67,9 @@
                                                 <rect key="frame" x="288" y="7" width="86" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelMeme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTj-sJ-yju"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -92,15 +98,17 @@
                     <connections>
                         <outlet property="bottomTextField" destination="4og-AE-gdg" id="jSp-al-Slb"/>
                         <outlet property="cameraButton" destination="U7g-4U-42t" id="Adl-tu-W0N"/>
+                        <outlet property="cancelButton" destination="hPP-HU-8UD" id="Hxh-9k-BUR"/>
                         <outlet property="imageView" destination="4Tz-3I-Dw0" id="2nt-ag-BZh"/>
                         <outlet property="navBar" destination="u61-n6-JC8" id="Vrf-mI-7zk"/>
+                        <outlet property="shareButton" destination="Cwk-hH-lRc" id="DNh-ae-HnA"/>
                         <outlet property="toolbar" destination="vU5-5C-koe" id="cTV-CL-3oq"/>
                         <outlet property="topTextField" destination="q1n-sK-Mag" id="WBz-HT-LLz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2171" y="-925"/>
+            <point key="canvasLocation" x="-1642" y="-931"/>
         </scene>
     </scenes>
     <resources>
