@@ -1,6 +1,6 @@
 //
 //  MemeTextFieldDelegate.swift
-//  Image Picker Practice
+//  Meme Me
 //
 //  Created by Maleina Bidek on 3/21/21.
 //
