@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class MemeTextFieldDelegate: NSObject, UITextFieldDelegate {
+    
+    // MARK: Life cycle methods
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if (textField.text == "TOP" || textField.text == "BOTTOM") {
             textField.text = ""
