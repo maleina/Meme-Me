@@ -35,7 +35,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        shareButton.isEnabled = false
+        shareButton.isEnabled = true
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
     }
@@ -53,16 +53,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         styleTextField(textField: bottomTextField)
     }
     
+    //MARK: Image Picker Controller Delegate
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                    imageView.image = image
+            imageView.image = image
+            //shareButton.isEnabled = true
                 }
-        shareButton.isEnabled = true
+        
         dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        shareButton.isEnabled = false
+        //shareButton.isEnabled = false
         dismiss(animated: true, completion: nil)
     }
     
@@ -146,9 +149,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let memedImage = generateMemedImage()
         let activityViewController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
         activityViewController.completionWithItemsHandler = {
-            activity, success, items, error in
-                        self.save()
-                        self.dismiss(animated: true, completion: nil)
+            (activityType: UIActivity.ActivityType?, completed:                         Bool, arrayReturnedItems: [Any]?, error: Error?) in
+            if completed{
+                self.save()
+                self.dismiss(animated: true, completion: nil)
+            }
+                        
         }
         present(activityViewController, animated: true, completion: nil)
     }
