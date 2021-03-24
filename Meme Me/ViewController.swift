@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
-    // MARK: Delegate for text fields
+    // MARK: Delegate
     let memeTextFieldDelegate = MemeTextFieldDelegate()
     
     // MARK: Constants
@@ -32,6 +32,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     ]
     
     // MARK: Life cycle methods
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         shareButton.isEnabled = false
@@ -47,14 +48,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
         topTextField.text = "TOP"
-        topTextField.textAlignment = .center
-        topTextField.delegate = memeTextFieldDelegate
-        topTextField.defaultTextAttributes = memeTextAttributes
         bottomTextField.text = "BOTTOM"
-        bottomTextField.textAlignment = .center
-        bottomTextField.delegate = memeTextFieldDelegate
-        bottomTextField.defaultTextAttributes = memeTextAttributes
-        
+        styleTextField(textField: topTextField)
+        styleTextField(textField: bottomTextField)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -71,6 +67,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     // MARK: Helper functions
+    
+    func styleTextField(textField: UITextField) {
+        textField.textAlignment = .center
+        textField.delegate = memeTextFieldDelegate
+        textField.defaultTextAttributes = memeTextAttributes
+    }
+    
     func subscribeToKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)

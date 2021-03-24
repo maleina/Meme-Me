@@ -16,10 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Tz-3I-Dw0">
-                                <rect key="frame" x="0.0" y="88" width="390" height="677"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="673"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="vU5-5C-koe">
-                                <rect key="frame" x="0.0" y="766" width="390" height="44"/>
+                                <rect key="frame" x="0.0" y="761" width="390" height="49"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1jQ-ss-cY7"/>
                                     <barButtonItem title="Use Camera" image="camera.fill" catalog="system" id="U7g-4U-42t">
@@ -35,21 +36,19 @@
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="d7y-dV-WeK"/>
                                 </items>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-sK-Mag">
-                                <rect key="frame" x="193" y="104" width="4" height="18.666666666666671"/>
+                                <rect key="frame" x="193" y="108" width="4" height="18.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4og-AE-gdg">
-                                <rect key="frame" x="193" y="730.66666666666663" width="4" height="18.333333333333371"/>
+                                <rect key="frame" x="193" y="722.66666666666663" width="4" height="18.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u61-n6-JC8">
+                            <navigationBar contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="u61-n6-JC8">
                                 <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Meme Me" id="Lbt-qg-csz">
                                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="cQi-nK-kB7">
@@ -79,17 +78,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="u61-n6-JC8" secondAttribute="bottom" constant="16" id="0Re-IM-BuT"/>
+                            <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="u61-n6-JC8" secondAttribute="bottom" constant="20" id="0Re-IM-BuT"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="top" secondItem="u61-n6-JC8" secondAttribute="bottom" id="7Qs-Nk-PuS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="bottom" id="CPa-v7-a1l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u61-n6-JC8" secondAttribute="trailing" id="Pby-D7-Vmb"/>
-                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="top" constant="-1" id="UKN-Bx-Oet"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="top" id="UKN-Bx-Oet"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Tz-3I-Dw0" secondAttribute="trailing" id="X6F-q5-WhJ"/>
                             <constraint firstItem="u61-n6-JC8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XpO-x6-3Xa"/>
                             <constraint firstItem="q1n-sK-Mag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAS-np-3Bh"/>
                             <constraint firstItem="4og-AE-gdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbW-qw-CBc"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mLV-iE-Imr"/>
-                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" constant="16" id="moY-G3-gX7"/>
+                            <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" constant="20" id="moY-G3-gX7"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n6I-sV-Hkr"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAP-i0-8MU"/>
                             <constraint firstItem="u61-n6-JC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uO3-NC-SzS"/>
