@@ -25,13 +25,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1jQ-ss-cY7"/>
                                     <barButtonItem title="Use Camera" image="camera.fill" catalog="system" id="U7g-4U-42t">
                                         <connections>
-                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="MoH-DD-AHN"/>
+                                            <action selector="chooseCameraImage:" destination="BYZ-38-t0r" id="MoH-DD-AHN"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Gh3-5I-O1X"/>
                                     <barButtonItem title="Album" id="azb-Ws-7kF">
                                         <connections>
-                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="HH3-ZE-H5l"/>
+                                            <action selector="chooseAlbumImage:" destination="BYZ-38-t0r" id="HH3-ZE-H5l"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="d7y-dV-WeK"/>
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1642" y="-931"/>
+            <point key="canvasLocation" x="-1898" y="-918"/>
         </scene>
     </scenes>
     <resources>

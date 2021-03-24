@@ -125,20 +125,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         _ = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: memedImage)
     }
     
-    // MARK: Actions
-    
-    @IBAction func pickAnImageFromAlbum(_ sender: Any) {
+    func pickAnImage (sourceType: UIImagePickerController.SourceType){
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = sourceType
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func pickAnImageFromCamera(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+    // MARK: Actions
+    
+    @IBAction func chooseAlbumImage(_ sender: Any) {
+        pickAnImage(sourceType: .photoLibrary)
+    }
+    
+    @IBAction func chooseCameraImage(_ sender: Any) {
+        pickAnImage(sourceType: .camera)
     }
     
     @IBAction func shareMeme(_ sender: Any) {
