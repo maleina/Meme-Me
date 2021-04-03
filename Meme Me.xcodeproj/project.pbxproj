@@ -15,6 +15,8 @@
 		B8CD3018260663BB001CC975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CD3016260663BB001CC975 /* Main.storyboard */; };
 		B8CD301A260663BE001CC975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CD3019260663BE001CC975 /* Assets.xcassets */; };
 		B8CD301D260663BE001CC975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8CD301B260663BE001CC975 /* LaunchScreen.storyboard */; };
+		B8FA49032618CA5B00D25305 /* SentMemesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA49022618CA5B00D25305 /* SentMemesCollectionViewController.swift */; };
+		B8FA49062618D09D00D25305 /* SentMemesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA49052618D09C00D25305 /* SentMemesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B8CD3019260663BE001CC975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8CD301C260663BE001CC975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8CD301E260663BE001CC975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FA49022618CA5B00D25305 /* SentMemesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMemesCollectionViewController.swift; sourceTree = "<group>"; };
+		B8FA49052618D09C00D25305 /* SentMemesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMemesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				B8CD301B260663BE001CC975 /* LaunchScreen.storyboard */,
 				B8CD301E260663BE001CC975 /* Info.plist */,
 				B84EFAB12609046A000A5A95 /* Meme.swift */,
+				B8FA49022618CA5B00D25305 /* SentMemesCollectionViewController.swift */,
+				B8FA49052618D09C00D25305 /* SentMemesCollectionViewCell.swift */,
 			);
 			path = "Meme Me";
 			sourceTree = "<group>";
@@ -152,9 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8CD3015260663BB001CC975 /* MemeEditorViewController.swift in Sources */,
+				B8FA49062618D09D00D25305 /* SentMemesCollectionViewCell.swift in Sources */,
 				B8CD3011260663BB001CC975 /* AppDelegate.swift in Sources */,
 				B8300A462607B0BE00ECB70B /* MemeTextFieldDelegate.swift in Sources */,
 				B8CD3013260663BB001CC975 /* SceneDelegate.swift in Sources */,
+				B8FA49032618CA5B00D25305 /* SentMemesCollectionViewController.swift in Sources */,
 				B84EFAB22609046A000A5A95 /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
