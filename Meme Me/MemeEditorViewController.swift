@@ -123,9 +123,12 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func save() {
-        // Create the meme
-        let memedImage = generateMemedImage()
-        _ = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image!, memedImage: memedImage)
+        // Update the meme
+        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: imageView.image, memedImage: generateMemedImage())
+        
+        // Add it to the memes array in the Application Delegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.memes.append(meme)
     }
     
     func pickAnImage (sourceType: UIImagePickerController.SourceType){
@@ -163,7 +166,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         topTextField.text = "TOP"
         bottomTextField.text = "BOTTOM"
         imageView.image = nil
-        shareButton.isEnabled = false
+        //shareButton.isEnabled = false
     }
     
 }
