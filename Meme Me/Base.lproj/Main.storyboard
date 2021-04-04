@@ -35,6 +35,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="a2M-Yu-HDG" kind="relationship" relationship="viewControllers" id="7Ua-H8-Dlt"/>
+                        <segue destination="4Tl-wZ-TWZ" kind="relationship" relationship="viewControllers" id="hDO-kp-jrz"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGL-z1-BaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,6 +78,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J36-2A-vki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2032" y="-1629"/>
+        </scene>
+        <!--Table-->
+        <scene sceneID="T5J-g3-uxM">
+            <objects>
+                <navigationController id="a2M-Yu-HDG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Table" id="eBb-OW-f8x"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y9e-8f-o8p">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EAD-Xr-hta" kind="relationship" relationship="rootViewController" id="uLp-cU-mDG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLu-d0-lWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2783" y="-896"/>
+        </scene>
+        <!--Sent Memes Table View Controller-->
+        <scene sceneID="QZy-Sw-7MZ">
+            <objects>
+                <tableViewController id="EAD-Xr-hta" customClass="SentMemesTableViewController" customModule="Meme_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="m2z-qe-jEf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DyZ-Wg-4r3">
+                                <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DyZ-Wg-4r3" id="Pre-Ur-wOg">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EAD-Xr-hta" id="YnB-Hp-bcB"/>
+                            <outlet property="delegate" destination="EAD-Xr-hta" id="ehp-vz-Dr9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2ye-fp-SH6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kP6-Ux-BkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2032" y="-896"/>
         </scene>
         <!--Meme Editor View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -175,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1472" y="-897"/>
+            <point key="canvasLocation" x="-1142" y="-1201"/>
         </scene>
     </scenes>
     <resources>
