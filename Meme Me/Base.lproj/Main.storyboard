@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection-->
+        <!--Navigation Controller-->
         <scene sceneID="m8I-TP-WZz">
             <objects>
                 <navigationController id="4Tl-wZ-TWZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" id="bc8-Ue-c1h"/>
+                    <tabBarItem key="tabBarItem" title="" image="square.grid.3x3.fill" catalog="system" landscapeImage="list" id="bc8-Ue-c1h"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="igf-Ge-8VG">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -100,11 +100,11 @@
             </objects>
             <point key="canvasLocation" x="-2032" y="-1629"/>
         </scene>
-        <!--Table-->
+        <!--Navigation Controller-->
         <scene sceneID="T5J-g3-uxM">
             <objects>
                 <navigationController id="a2M-Yu-HDG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" id="eBb-OW-f8x"/>
+                    <tabBarItem key="tabBarItem" title="" image="list.dash" catalog="system" id="eBb-OW-f8x"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y9e-8f-o8p">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -257,12 +257,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZJb-ww-6g6"/>
+        <segue reference="hXG-qL-PO0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="list" width="128" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.grid.3x3.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
