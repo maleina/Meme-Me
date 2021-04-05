@@ -21,6 +21,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
+        collectionView!.reloadData()
     }
 
     override func viewDidLoad() {
@@ -34,7 +35,6 @@ class SentMemesCollectionViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
-
 
     // MARK: UICollectionViewDataSource
 

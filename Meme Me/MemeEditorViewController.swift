@@ -18,6 +18,9 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    
     
     // MARK: Delegate
     let memeTextFieldDelegate = MemeTextFieldDelegate()
@@ -89,12 +92,31 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
 
     @objc func keyboardWillShow(_ notification:Notification) {
         if bottomTextField.isEditing {
-            view.frame.origin.y -= getKeyboardHeight(notification)
+            let keyboardHeight = getKeyboardHeight(notification)
+            view.frame.origin.y -= keyboardHeight
+            // For iOS 14 we must adjust the constraints as well
+            topConstraint.constant -= keyboardHeight
+            //bottomConstraint.constant -= keyboardHeight
+            
+            
         }
     }
 
     @objc func keyboardWillHide(_ notification:Notification) {
+        
+        print(view.frame.origin.y)
+        print(bottomConstraint.constant)
+        print(topConstraint.constant)
+        
         view.frame.origin.y = 0
+
+        // Reset constraints for iOS 14
+        if bottomConstraint.constant != 0 {
+            bottomConstraint.constant = 0
+        }
+        if topConstraint.constant != 0 {
+            topConstraint.constant = 0
+        }
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
