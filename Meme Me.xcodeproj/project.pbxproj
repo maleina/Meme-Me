@@ -47,14 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8300A402607B03A00ECB70B /* TextFieldDelegates */ = {
-			isa = PBXGroup;
-			children = (
-				B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */,
-			);
-			path = TextFieldDelegates;
-			sourceTree = "<group>";
-		};
 		B8CD3004260663BB001CC975 = {
 			isa = PBXGroup;
 			children = (
@@ -74,10 +66,10 @@
 		B8CD300F260663BB001CC975 /* Meme Me */ = {
 			isa = PBXGroup;
 			children = (
-				B8300A402607B03A00ECB70B /* TextFieldDelegates */,
 				B8CD3010260663BB001CC975 /* AppDelegate.swift */,
 				B8CD3012260663BB001CC975 /* SceneDelegate.swift */,
 				B8CD3014260663BB001CC975 /* MemeEditorViewController.swift */,
+				B8300A452607B0BE00ECB70B /* MemeTextFieldDelegate.swift */,
 				B8CD3016260663BB001CC975 /* Main.storyboard */,
 				B8CD3019260663BE001CC975 /* Assets.xcassets */,
 				B8CD301B260663BE001CC975 /* LaunchScreen.storyboard */,
