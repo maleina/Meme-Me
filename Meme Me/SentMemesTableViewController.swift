@@ -28,13 +28,17 @@ class SentMemesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return memes.count
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        self.view.frame.height/6.0
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SentMemesCollectionTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SentMemesCollectionTableCell", for: indexPath) as! SentMemesTableViewCell
         let meme = self.memes[(indexPath as NSIndexPath).row]
         
-        cell.textLabel?.text = meme.topText + "..." + meme.bottomText
-        cell.imageView?.image = meme.memedImage
+        cell.customTextLabel?.text = meme.topText + "..." + meme.bottomText
+        cell.customImageView?.image = meme.memedImage
         
         return cell
     }

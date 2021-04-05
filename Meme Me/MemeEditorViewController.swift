@@ -38,7 +38,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        shareButton.isEnabled = true
+        setShareButton()
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
     }
@@ -61,7 +61,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageView.image = image
-            //shareButton.isEnabled = true
+            setShareButton()
                 }
         
         dismiss(animated: true, completion: nil)
@@ -73,6 +73,14 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     // MARK: Helper functions
+    
+    func setShareButton() {
+            if imageView.image != nil {
+                shareButton.isEnabled = true
+            } else {
+                shareButton.isEnabled = false
+            }
+        }
     
     func styleTextField(textField: UITextField) {
         textField.textAlignment = .center
@@ -103,10 +111,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
 
     @objc func keyboardWillHide(_ notification:Notification) {
-        
-        print(view.frame.origin.y)
-        print(bottomConstraint.constant)
-        print(topConstraint.constant)
         
         view.frame.origin.y = 0
 
@@ -156,6 +160,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func pickAnImage (sourceType: UIImagePickerController.SourceType){
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        //imagePicker.allowsEditing = true
         imagePicker.sourceType = sourceType
         present(imagePicker, animated: true, completion: nil)
     }
