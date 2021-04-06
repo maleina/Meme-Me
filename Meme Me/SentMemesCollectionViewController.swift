@@ -17,6 +17,7 @@ class SentMemesCollectionViewController: UICollectionViewController {
         return appDelegate.memes
     }
     
+    // MARK: Outlet
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     // MARK: Life Cycle

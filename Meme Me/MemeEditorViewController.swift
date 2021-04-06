@@ -63,7 +63,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             imageView.image = image
             setShareButton()
                 }
-        
         dismiss(animated: true, completion: nil)
     }
     
@@ -102,11 +101,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         if bottomTextField.isEditing {
             let keyboardHeight = getKeyboardHeight(notification)
             view.frame.origin.y -= keyboardHeight
-            // For iOS 14 we must adjust the constraints as well
+            // For iOS 14 we must adjust the top constraint as well
             topConstraint.constant -= keyboardHeight
-            //bottomConstraint.constant -= keyboardHeight
-            
-            
         }
     }
 
@@ -114,7 +110,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         
         view.frame.origin.y = 0
 
-        // Reset constraints for iOS 14
+        // iOS 14 fix: Reset constraints if they've changed
         if bottomConstraint.constant != 0 {
             bottomConstraint.constant = 0
         }
@@ -160,7 +156,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     func pickAnImage (sourceType: UIImagePickerController.SourceType){
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        //imagePicker.allowsEditing = true
         imagePicker.sourceType = sourceType
         present(imagePicker, animated: true, completion: nil)
     }
@@ -184,7 +179,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
                 self.save()
                 self.dismiss(animated: true, completion: nil)
             }
-                        
         }
         present(activityViewController, animated: true, completion: nil)
     }
