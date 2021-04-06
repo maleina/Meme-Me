@@ -102,7 +102,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             let keyboardHeight = getKeyboardHeight(notification)
             view.frame.origin.y -= keyboardHeight
             // For iOS 14 we must adjust the top constraint as well
-            topConstraint.constant -= keyboardHeight
+            topConstraint.constant -= keyboardHeight/4
         }
     }
 
