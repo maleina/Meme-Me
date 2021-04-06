@@ -216,12 +216,12 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-sK-Mag">
-                                <rect key="frame" x="193" y="128" width="4" height="18.666666666666657"/>
+                                <rect key="frame" x="16" y="128" width="358" height="18.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4og-AE-gdg">
-                                <rect key="frame" x="193" y="702.66666666666663" width="4" height="18.333333333333371"/>
+                                <rect key="frame" x="16" y="703" width="358" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -257,16 +257,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q1n-sK-Mag" firstAttribute="top" secondItem="u61-n6-JC8" secondAttribute="bottom" constant="40" id="0Re-IM-BuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4og-AE-gdg" secondAttribute="trailing" constant="16" id="4PO-y7-Jjh"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="top" secondItem="u61-n6-JC8" secondAttribute="bottom" id="7Qs-Nk-PuS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="bottom" id="CPa-v7-a1l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u61-n6-JC8" secondAttribute="trailing" id="Pby-D7-Vmb"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="vU5-5C-koe" secondAttribute="top" id="UKN-Bx-Oet"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Tz-3I-Dw0" secondAttribute="trailing" id="X6F-q5-WhJ"/>
                             <constraint firstItem="u61-n6-JC8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XpO-x6-3Xa"/>
-                            <constraint firstItem="q1n-sK-Mag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAS-np-3Bh"/>
-                            <constraint firstItem="4og-AE-gdg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbW-qw-CBc"/>
+                            <constraint firstItem="4og-AE-gdg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bHI-uy-7vV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q1n-sK-Mag" secondAttribute="trailing" constant="16" id="izE-rn-RCi"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mLV-iE-Imr"/>
                             <constraint firstItem="4Tz-3I-Dw0" firstAttribute="bottom" secondItem="4og-AE-gdg" secondAttribute="bottom" constant="40" id="moY-G3-gX7"/>
+                            <constraint firstItem="q1n-sK-Mag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="n0n-ed-H7r"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="n6I-sV-Hkr"/>
                             <constraint firstItem="vU5-5C-koe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAP-i0-8MU"/>
                             <constraint firstItem="u61-n6-JC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uO3-NC-SzS"/>
@@ -288,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1111" y="-1629"/>
+            <point key="canvasLocation" x="-1113.8461538461538" y="-1629.3838862559242"/>
         </scene>
         <!--Meme Detail View Controller-->
         <scene sceneID="fP7-YF-djn">

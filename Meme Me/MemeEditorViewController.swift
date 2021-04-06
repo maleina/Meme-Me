@@ -50,10 +50,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        topTextField.text = "TOP"
-        bottomTextField.text = "BOTTOM"
-        styleTextField(textField: topTextField)
-        styleTextField(textField: bottomTextField)
+        styleTextField(textField: topTextField, text: "TOP")
+        styleTextField(textField: bottomTextField, text: "BOTTOM")
     }
     
     //MARK: Image Picker Controller Delegate
@@ -67,7 +65,6 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        //shareButton.isEnabled = false
         dismiss(animated: true, completion: nil)
     }
     
@@ -81,10 +78,11 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             }
         }
     
-    func styleTextField(textField: UITextField) {
-        textField.textAlignment = .center
+    func styleTextField(textField: UITextField, text: String) {
         textField.delegate = memeTextFieldDelegate
         textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .center
+        textField.text = text
     }
     
     func subscribeToKeyboardNotifications() {
